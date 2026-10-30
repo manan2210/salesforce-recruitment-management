@@ -1,0 +1,6 @@
+-- Example query for Salesforce CLI or Developer Console Query Editor
+-- Counts active and completed application records by recruitment stage
+SELECT Status__c, COUNT(Id)
+FROM Application__c
+GROUP BY Status__c
+ORDER BY COUNT(Id) DESC
